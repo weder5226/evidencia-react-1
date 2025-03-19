@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-primary: var(--my-color-primary);
+  --color-secondary: var(--my-color-secondary);
+  --color-secondary-str: var(--my-color-secondary-strong);
+  --color-font: var(--my-color-font);
+  --color-font-str: var(--my-color-font-str);
+  --color-logo: var(--my-color-logo);
+  --color-header: var(--my-color-header);
+  --color-card-bg: var(--my-color-card-bg);
+  --color-card-border: var(--my-color-card-border);
+  --color-card-shade: var(--my-color-card-shade);
+  --color-card-font: var(--my-color-card-font);
+  --color-card-effect: var(--my-color-card-effect);
+  --color-toggle-bg: var(--my-color-toggle-bg);
+  --color-toggle-fill: var(--my-color-toggle-fill);
+  --color-btn-nav-effect: var(--my-color-btn-nav-effect);
+}
+
+:root {
+  --my-color-primary: #f0f0f0;
+  --my-color-secondary: #059669;
+  --my-color-secondary-strong: #047857;
+  --my-color-font: #1f2937;
+  --my-color-font-str: #1f2937;
+  --my-color-logo: #009973;
+  --my-color-header: #ae987fe6;
+  --my-color-card-bg: #f5f5f5;
+  --my-color-card-border: #f5f5f5;
+  --my-color-card-shade: #9ca3af;
+  --my-color-card-font: #4b5563;
+  --my-color-card-effect: #f97316;
+  --my-color-toggle-bg: #fef3c7;
+  --my-color-toggle-fill: #fdba74;
+  --my-color-btn-nav-effect: #fb923c;
+}
+
+html.dark {
+  --my-color-primary: #202020;
+  --my-color-secondary: #059669;
+  --my-color-secondary-strong: #047857;
+  --my-color-font: #bebebe;
+  --my-color-font-str: #dcdcdd;
+  --my-color-logo: #007b5f;
+  --my-color-header: #14284ae6;
+  --my-color-card-bg: #323232;
+  --my-color-card-border: #828282;
+  --my-color-card-shade: #464646;
+  --my-color-card-font: #b4b4b4;
+  --my-color-card-effect: #f97316;
+  --my-color-toggle-bg: #1e1b4b;
+  --my-color-toggle-fill: #3b82f6;
+  --my-color-btn-nav-effect: #fb923c;
+}

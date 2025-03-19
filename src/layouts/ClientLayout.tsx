@@ -1,10 +1,17 @@
+import { Footer } from "@/components/shared/Footer";
+import { Header } from "@/components/shared/Header";
+import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { Outlet } from "react-router";
 
 export const ClientLayout = () => {
   return (
-    <>
-      <h1 className="text-4xl text-blue-600">Generic Template</h1>
-      <Outlet />
-    </>
+    <div className="bg-primary text-font flex min-h-screen flex-col">
+      <Header />
+      <main className="container mx-auto flex max-w-[1200px] grow flex-col justify-center">
+        <Outlet />
+        <WhatsAppButton />
+      </main>
+      <Footer />
+    </div>
   );
 };

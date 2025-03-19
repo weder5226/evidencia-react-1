@@ -1,3 +1,7 @@
 export const Catalog = () => {
-  return <h3 className="text-center text-2xl">Catalog Page</h3>;
+  return (
+    <div className="min-h-screen">
+      <h3 className="mt-60 text-center text-2xl">Catalog Page on progress...</h3>
+    </div>
+  );
 };
