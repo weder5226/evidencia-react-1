@@ -10,13 +10,5 @@ export default {
   bracketSpacing: true,
   arrowParens: "always",
   endOfLine: "auto",
-  plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
-  overrides: [
-    {
-      files: "*.astro",
-      options: {
-        parser: "astro"
-      }
-    }
-  ]
+  plugins: ["prettier-plugin-tailwindcss"],
 };
