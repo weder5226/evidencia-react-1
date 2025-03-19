@@ -1,4 +1,5 @@
 import { BusinessIcon } from "@/icons/BusinessIcon";
+import { Link } from "react-router";
 
 export const Footer = () => {
   return (
@@ -19,9 +20,9 @@ export const Footer = () => {
                 },
               ].map(({ href, text }, i) => (
                 <li key={i} className="mb-4">
-                  <a href={href} className="hover:underline">
+                  <Link to={href} className="hover:underline">
                     {text}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
